@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FasTech Cart</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      href="css/jquery.mb.YTPlayer.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/iconLogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&display=swap" rel="stylesheet"> 
+  
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+    <link rel="stylesheet" href="css/style4.css" />
+  </head>
+<style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: white;
+	min-height: 100vh;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+header.sticky{
+	padding: 5px 100px;
+	background: black;
+}
+
+header .logo{
+	position: relative;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url("homeBg.jpg");
+	background-size: cover;
+    
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+	color: white;
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+
+}
+
+.description h1 {
+  color: black;
+}
+
+.description p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+  background-color: black;
+}
+
+.feature-title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 7px;
+}
+.p{
+	color: white;
+}
+
+.title{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  
+}
+
+.title h1{
+	color: white;
+	text-align: center;
+	font-size: 100px;
+	font-family: Freestyle Script;
+	text-shadow: 4px 4px black;
+}
+
+.p1{
+	background-color:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0,0,0,0.4));
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-family: Bahnschrift Condensed;
+	text-align: center;
+}
+
+.button{
+	position: absolute;
+	top: 86%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+	
+.btn{
+	border: 1px solid #fff;
+	padding: 5px 30px;
+	color: #fff;
+	text-decoration: none;
+}	
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+/*footer*/
+.footer-basic {
+    padding:40px 0;
+    background-color:black;
+    color:white;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 63px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+
+
+
+/*bacs*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  overflow-x: hidden; }
+
+.d-block{
+  line-height: 1.7;
+  color: BLACK;
+  font-weight: 300;
+  font-size: 120px;
+font-family: "Cinzel"; }
+
+.pclass{
+    line-height: 1.7;
+    color: white;
+    font-weight: 300;
+    font-size: 26px;
+    font-family: Bahnschrift Condensed;
+  }
+
+#loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 2000; }
+
+.wine_v_1, .wine_h_1 {
+  position: relative;
+  margin-bottom: 30px; }
+  .wine_v_1:before, .wine_h_1:before {
+    content: "";
+    background: #f3f4f5;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .wine_v_1 .thumbnail, .wine_h_1 .thumbnail {
+    position: relative;
+    display: block; }
+  .wine_v_1 .heading, .wine_h_1 .heading {
+    font-size: 18px; }
+    .wine_v_1 .heading a, .wine_h_1 .heading a {
+      color: white; }
+  .wine_v_1 .wine-actions, .wine_h_1 .wine-actions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .wine_v_1 .wine-actions .heading-2, .wine_h_1 .wine-actions .heading-2 {
+      font-size: 20px; }
+      .wine_v_1 .wine-actions .heading-2 a, .wine_h_1 .wine-actions .heading-2 a {
+        color: white; }
+    .wine_v_1 .wine-actions .price, .wine_h_1 .wine-actions .price {
+      font-size: 20px;
+      color: #930077;
+      font-family: "Cinzel"; }
+      .wine_v_1 .wine-actions .price del, .wine_h_1 .wine-actions .price del {
+        color: #ccc; }
+    .wine_v_1 .wine-actions .rating, .wine_h_1 .wine-actions .rating {
+      margin-bottom: 20px; }
+      .wine_v_1 .wine-actions .rating span, .wine_h_1 .wine-actions .rating span {
+        font-size: 16px;
+        color: #ffbd39; }
+    .wine_v_1 .wine-actions .btn, .wine_h_1 .wine-actions .btn {
+      background: #930077;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 0; }
+      .wine_v_1 .wine-actions .btn:hover, .wine_h_1 .wine-actions .btn:hover {
+        background: #60004e;
+        color: #fff; }
+  .wine_v_1:hover .wine-actions, .wine_h_1:hover .wine-actions, .wine_v_1:focus .wine-actions, .wine_h_1:focus .wine-actions {
+    opacity: 1;
+    visibility: visible; }
+
+.hero-2 {
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center; }
+  .hero-2 > .container .row {
+    height: 50vh;
+    min-height: 500px;
+    z-index: 2; }
+  .hero-2:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #222;
+    opacity: .3;
+    border-bottom-right-radius: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .hero-2 h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-transform: uppercase; }
+    @media (max-width: 991.98px) {
+      .hero-2 h2 {
+        font-size: 2rem; } }
+    .hero-2 h2 strong {
+      font-weight: 700; }
+  .hero-2 .sub-title {
+    font-family: "Cinzel";
+    color: #fff;
+    font-size: 1.5rem; }
+  .hero-2 p {
+    color: #fff;
+    font-size: 1.1rem; }
+    .hero-2 p a {
+      color: #fff;
+      text-decoration: underline; }
+
+    .toasts{
+      position: fixed; 
+      top: 4rem; 
+      right: 2rem; 
+      z-index: 9;
+    }
+  
+    .toast {
+    background: rgb(250, 54, 54);
+    opacity: .9;
+    border-radius: 0.5rem;
+    padding: 1rem 0.8rem;
+    z-index: 9999;
+  }
+  /*footer*/
+.footer-basic {
+    padding:40px 0;
+    background-color:black;
+    color:white;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 63px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+</style>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+ 
+    <header>
+		<i><a href="index.htm" class="logo">FasTech</a></i>
+		<ul>
+          <li><a href="shop.htm">Menu</a></li>
+          <li><a href="cart.htm">Cart</a></li>
+          <li><a href="aboutUs/aboutUs.htm">About</a></li>
+          <li><a href="contact/contact.html">Contact</a></li>
+          <li><a href="#">Account</a></li>
+		</ul>
+	</header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        </script>
+
+ 
+
+      <div class="site-section  pb-0">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7 section-title text-center mb-5">
+              <h2 class="d-block">Cart</h2>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <form class="col-md-12" method="post">
+              <div class="site-blocks-table">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th class="product-thumbnail">Image</th>
+                      <th class="product-name">Product</th>
+                      <th class="product-price">Price</th>
+                      <th class="product-quantity">Quantity</th>
+                      <th class="product-total">Total</th>
+                      <th class="product-remove">Remove</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pt-5 bg-light">
+        <div class="container" style="background-color: gainsboro;">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row mb-5">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <a href="shop.htm" class="btn btn-outline-primary btn-md btn-block">
+                    Continue Shopping
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <button id="delete-all" class="btn btn-danger btn-md btn-block" onclick="return confirm('Are you sure you want to Remove?');">
+                    Delete All Items
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 pl-5">
+              <div class="row justify-content-end">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-12 text-right border-bottom mb-5">
+                      <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <span class="text-black">Subtotal</span>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <strong class="text-black subtotal">₱0.00</strong>
+                    </div>
+                  </div>
+                  <div class="row mb-3 discountParent" style="display: none;">
+                    <div class="col-md-6">
+                      <span class="text-black"
+                        >Discount (<span id="discount"></span>% Off)</span
+                      >
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <strong class="text-black discountValue">₱0.00</strong>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <span class="text-black">Taxes (VAT)</span>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <strong class="text-black taxes">₱0.00</strong>
+                    </div>
+                  </div>
+                  <div class="row mb-5">
+                    <div class="col-md-6">
+                      <span class="text-black">Total</span>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <strong class="text-black grandTotal">₱0.00</strong>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="btn btn-primary btn-lg btn-block checkout">
+                        Proceed To Checkout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <p class="copyright">© 2022 FasTech. All Rights Reserved.</p>
+        </footer>
+    </div>
+    </div>
+    <!-- .site-wrap -->
+    <div class="toasts"></div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/custom/Cart.js"></script>
+    <script src="js/custom/CartLoop.js"></script>
+    
+  </body>
+</html>
