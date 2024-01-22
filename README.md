@@ -2,9 +2,6 @@
 3rd year College Project in Technological Institute of the Philippines - Quezon City
 
 # Stack used: 
-Front-end
-- HTML, CSS, and JavaScript
-Back-end
-- PHP
-Database
-- MySQL
+- HTML, CSS, and JavaScript (Front-end)
+- PHP (Back-end)
+- MySQL (Database)
