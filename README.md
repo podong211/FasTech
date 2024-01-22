@@ -3,8 +3,8 @@
 
 # Stack used: 
 Front-end
- - HTML, CSS, and JavaScript
+- HTML, CSS, and JavaScript
 Back-end
- - PHP
+- PHP
 Database
- - MySQL
+- MySQL
